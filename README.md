@@ -80,6 +80,23 @@ available. Run it again after adding credentials; completed apps are resumed.
 
 Open `site/index.html` by double-clicking it. No server needed.
 
+## Live Netlify deployment
+
+The static dashboard is deployed at:
+
+**https://appintel-research.netlify.app**
+
+Netlify configuration is stored in `netlify.toml`. The published directory is `site/`.
+
+## Deploy to Vercel
+
+The dashboard is a static Vercel project. Deploy the repository through Vercel:
+
+1. Import `KaranGupta143/AppIntel-Research`.
+2. Leave the framework preset as **Other**.
+3. Set the output directory to `site`.
+4. Deploy.
+
 ## Optional Composio SDK/MCP check
 
 Composio is not required by the research pipeline. To test the current SDK locally:
