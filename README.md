@@ -1,8 +1,23 @@
 # AppIntel Integration Research
 
-A small Python pipeline plus a static dashboard. For each of 100 apps it researches how a developer gets API access (auth, self-serve vs gated, API type and breadth, MCP availability) and gives a buildability verdict: could this become an AI-agent toolkit today?
+<p align="center">
+  <img src="assets/appintel-logo.svg" alt="AppIntel logo" width="120">
+</p>
 
-Built for the Composio AI Product Ops Intern take-home.
+<p align="center">
+  <strong>A transparent research pipeline and SaaS-style dashboard for evaluating app integrations.</strong>
+</p>
+
+<p align="center">
+  <a href="#"><img alt="Tests" src="https://img.shields.io/badge/tests-17%20passing-2d9d78"></a>
+  <a href="#"><img alt="Python" src="https://img.shields.io/badge/python-3.11%2B-315efb"></a>
+  <a href="#"><img alt="Platform" src="https://img.shields.io/badge/platform-Windows-667085"></a>
+  <a href="#"><img alt="Status" src="https://img.shields.io/badge/live%20research-pending-f59e0b"></a>
+</p>
+
+AppIntel combines a resumable Python research pipeline with a responsive, light-theme dashboard for comparing authentication, API access, MCP availability, buildability and evidence quality across a 100-app catalogue.
+
+> **Submission status:** the implementation and 17 automated tests are complete. Live research and human verification have not started, so the dashboard contains no fabricated findings or accuracy statistics.
 
 ## Status (read this first)
 - **Automated tests:** 17 tests pass.

@@ -7,7 +7,8 @@ body{margin:0;font:15px/1.55 Inter,"Segoe UI",system-ui,-apple-system,sans-serif
 .topbar{height:64px;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;backdrop-filter:blur(12px)}
 .nav-shell{height:100%;display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:750}
-.brand-mark{width:32px;height:32px;border-radius:8px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,#315efb,#6c48d7);box-shadow:0 6px 16px rgba(49,94,251,.18)}
+.brand-mark{width:32px;height:32px;border-radius:8px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,#315efb,#6c48d7);box-shadow:0 6px 16px rgba(49,94,251,.18);position:relative}
+.brand-mark::before{content:"";width:12px;height:12px;border:2px solid #fff;border-radius:3px;box-shadow:5px 5px 0 -2px #fff,-5px -5px 0 -2px #fff}
 .topbar nav{display:flex;align-items:center;gap:4px}
 .topbar nav a{padding:8px 12px;color:#667085;text-decoration:none;font-size:14px;font-weight:650;border-radius:7px}
 .topbar nav a:hover,.topbar nav a.active{color:var(--accent);background:#eef3ff}

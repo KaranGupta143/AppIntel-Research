@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-labelledby="title desc">
+  <title id="title">AppIntel Integration Research</title>
+  <desc id="desc">A blue and violet integration node logo with AppIntel wordmark</desc>
+  <defs>
+    <linearGradient id="g" x1="20" y1="20" x2="140" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#315efb"/>
+      <stop offset="1" stop-color="#6c48d7"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="144" height="144" rx="32" fill="url(#g)"/>
+  <g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="48" y="48" width="64" height="64" rx="10"/>
+    <path d="M48 80H24M112 80h24M80 48V24M80 112v24"/>
+  </g>
+  <circle cx="80" cy="80" r="10" fill="#fff"/>
+  <text x="180" y="91" fill="#14213d" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="58" font-weight="750">AppIntel</text>
+  <text x="183" y="126" fill="#667085" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="650">INTEGRATION RESEARCH</text>
+</svg>
