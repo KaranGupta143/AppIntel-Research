@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>100-App Integration Research</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="shell nav-shell">
+    <a class="brand" href="#overview" aria-label="Research overview">
+      <span class="brand-mark">I</span><span>Integration Research</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#overview" class="active">Overview</a>
+      <a href="#catalogue">Apps</a>
+      <a href="#patterns">Insights</a>
+      <a href="#verification">Verification</a>
+    </nav>
+  </div>
+</header>
+<main class="shell">
+  <section class="hero" id="overview">
+    <div class="hero-heading">
+      <div>
+        <p class="eyebrow">API integration landscape</p>
+        <h1>Research overview</h1>
+        <p class="lead">A live audit of developer access, API coverage and MCP availability across the application catalogue.</p>
+      </div>
+      <button class="secondary-button" id="refresh-info" type="button">How to refresh</button>
+    </div>
+    <div class="progress-card" id="progress-card"></div>
+    <div class="cards" id="overview-cards"></div>
+  </section>
+
+  <section id="summary">
+    <div class="section-heading"><div><p class="eyebrow">At a glance</p><h2>Research summary</h2></div></div>
+    <div class="grid" id="summary-grid"></div>
+  </section>
+
+  <section id="catalogue">
+    <div class="section-heading">
+      <div><p class="eyebrow">Application catalogue</p><h2>Explore integrations</h2></div>
+      <p class="muted" id="count"></p>
+    </div>
+    <div class="filter-bar">
+      <label class="search-field"><span class="search-icon">⌕</span><input id="q" type="search" placeholder="Search apps, auth or API…" aria-label="Search applications"></label>
+      <select id="f-cat" aria-label="Category"></select>
+      <select id="f-build" aria-label="Buildability"></select>
+      <select id="f-mcp" aria-label="MCP availability"></select>
+      <select id="f-ev" aria-label="Evidence status"></select>
+      <button class="clear-button" id="clear-filters" type="button">Clear</button>
+    </div>
+    <div class="table-wrap"><table id="tbl"><thead><tr>
+      <th>Application</th><th>Category</th><th>Authentication</th><th>Developer access</th><th>API</th><th>MCP</th><th>Buildability</th><th>Evidence</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section id="patterns">
+    <div class="section-heading"><div><p class="eyebrow">Evidence-based findings</p><h2>Research insights</h2></div></div>
+    <div id="patterns-body"></div>
+  </section>
+
+  <section id="verification">
+    <div class="section-heading"><div><p class="eyebrow">Quality control</p><h2>Human verification</h2></div></div>
+    <div id="verification-body"></div>
+  </section>
+
+  <section id="method">
+    <div class="section-heading"><div><p class="eyebrow">Methodology</p><h2>How this research is produced</h2></div></div>
+    <div class="two">
+      <div class="panel"><h3>Process</h3><ol>
+        <li>Read the 100-app catalogue.</li><li>Search official documentation, authentication and MCP sources.</li>
+        <li>Fetch and validate relevant pages.</li><li>Extract only supported facts.</li>
+        <li>Save each result incrementally and export dashboard data.</li></ol></div>
+      <div class="panel"><h3>Limitations</h3><ul>
+        <li>Credentials are not tested through account sign-up.</li><li>Partner pricing may remain Unknown.</li>
+        <li>JavaScript-only documentation may not be readable.</li><li>Buildability is a rubric-based judgment.</li></ul></div>
+    </div>
+  </section>
+</main>
+<dialog id="detail" aria-labelledby="detail-title"></dialog>
+<footer><div class="shell muted">Generated from <code>data/research_results.json</code>. Figures use the saved research data only.</div></footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
